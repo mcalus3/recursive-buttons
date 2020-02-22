@@ -1,0 +1,29 @@
+.f-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.f-grow {
+  flex-grow: 1;
+}
+
+.r-button {
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: linear-gradient(to bottom, #f9f8fb 0%, #e3dfec 100%);
+  border: 0;
+  padding: 0;
+  outline: 1px solid black;
+  border-radius: 0;
+}
+
+.r-button:hover {
+  background: linear-gradient(to bottom, #e3dfec 0%, #f9f8fb 100%);
+}
+
+.r-button:active {
+  background: linear-gradient(to bottom, #dcd8e9 0%, #eeecf4 100%);
+}
