@@ -4,11 +4,13 @@ import { RecursiveButton } from './RecursiveButton';
 export type RecursiveButtonsParams = {
   touchEnabled?: boolean;
   hoverMode?: boolean;
+  text?: string;
 } & React.HTMLAttributes<HTMLDivElement>;
 
 export const RecursiveButtons: React.FC<RecursiveButtonsParams> = ({
   hoverMode = false,
   touchEnabled = true,
+  text = 'click me!',
   className,
   style,
 }) => {
@@ -43,7 +45,7 @@ export const RecursiveButtons: React.FC<RecursiveButtonsParams> = ({
       style={{ ...style, display: 'flex', height: '100%' }}
       onTouchStart={onTouch}
     >
-      <RecursiveButton first hover={hoverMode} />
+      <RecursiveButton first hover={hoverMode} text={text} />
     </div>
   );
 };

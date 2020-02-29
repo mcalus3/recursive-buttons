@@ -4,9 +4,10 @@ import classes from './RecursiveButton.module.css';
 type Props = {
   first?: boolean;
   hover: boolean;
+  text?: string;
 };
 
-export const RecursiveButton: React.FC<Props> = ({ first, hover }) => {
+export const RecursiveButton: React.FC<Props> = ({ first, hover, text }) => {
   const [clicked, setClicked] = React.useState(false);
 
   const open = () => {
@@ -37,7 +38,7 @@ export const RecursiveButton: React.FC<Props> = ({ first, hover }) => {
       onClick={open}
       onMouseMove={hover ? open : undefined}
     >
-      {first ? 'Click me!' : null}
+      {first ? text : null}
     </button>
   );
 };
