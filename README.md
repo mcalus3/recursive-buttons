@@ -2,7 +2,7 @@
 
 recursive-buttons is a simple decorative react component that you can import as a library. It's inspired by a geometric shape called [Sierpinski carpet](https://en.wikipedia.org/wiki/Sierpinski_carpet) and bubble wrap popping.
 
-![example of a component](/docs/gif.gif)
+![example of a component](./docs/gif.gif)
 
 ### Install
 
